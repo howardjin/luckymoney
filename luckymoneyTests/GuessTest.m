@@ -6,15 +6,27 @@
 #import <XCTest/XCTest.h>
 #import "LuckyMoney.h"
 
-@interface GuessTests : XCTestCase
+@interface LuckyMoneyTests : XCTestCase
 
 @end
-@implementation GuessTests
+@implementation LuckyMoneyTests
 
 - (void)testBingo {
     LuckyMoney *guess = [[LuckyMoney alloc] initWithMoney:1];
     NSString *result = [guess guess:1];
-    XCTAssert([result isEqual:@"Bingo!"], @"should show bingo after correct luckyMoney");
+    XCTAssert([result isEqual:@"Bingo!"], @"should show bingo after correct guess");
+}
+
+- (void)testShouldReportLessThan {
+    LuckyMoney *luckyMoney = [[LuckyMoney alloc] initWithMoney:50];
+    NSString *result = [luckyMoney guess:9];
+    XCTAssert([result isEqual:@"10-100"], @"should show upper range after smaller guess");
+}
+
+- (void)testShouldReportLessGreaterThan {
+    LuckyMoney *luckyMoney = [[LuckyMoney alloc] initWithMoney:50];
+    NSString *result = [luckyMoney guess:51];
+    XCTAssert([result isEqual:@"1-50"], @"should show upper range after bigger guess");
 }
 
 @end

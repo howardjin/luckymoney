@@ -25,6 +25,11 @@
 
 - (NSString *)guess:(NSInteger)value {
     //TODO:
+    if (value < self.goal) {
+        return [NSString stringWithFormat:@"%@-100", @(value + 1)];
+    } else if (value > self.goal){
+        return [NSString stringWithFormat:@"1-%@", @(value - 1)];
+    }
     return @"Bingo!";
 }
 @end

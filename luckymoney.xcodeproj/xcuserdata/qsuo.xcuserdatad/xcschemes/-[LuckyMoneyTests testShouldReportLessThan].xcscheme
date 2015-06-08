@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES"
+            buildForTesting = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "351C389263D97F90541E8BB4"
+               BuildableName = "luckymoneyTests.xctest"
+               BlueprintName = "luckymoneyTests"
+               ReferencedContainer = "container:luckymoney.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug">
+      <Testables>
+         <TestableReference>
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "351C389263D97F90541E8BB4"
+               BuildableName = "luckymoneyTests.xctest"
+               BlueprintName = "luckymoneyTests"
+               ReferencedContainer = "container:luckymoney.xcodeproj">
+            </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "LuckyMoneyTests/testBingo">
+               </Test>
+               <Test
+                  Identifier = "luckymoneyTests">
+               </Test>
+            </SkippedTests>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO">
+   </LaunchAction>
+</Scheme>
