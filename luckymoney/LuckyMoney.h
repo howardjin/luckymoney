@@ -1,5 +1,5 @@
 //
-//  Guess.h
+//  LuckyMoney.h
 //  luckymoney
 //
 //  Created by kpse on 6/8/15.
@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <stdlib.h>
 
-@interface Guess : NSObject
+@interface LuckyMoney : NSObject
 
-- (instancetype)initWithGoal:(NSInteger)goal;
+- (instancetype)initWithMoney:(NSInteger)goal;
 
-- (NSString *)tryNext:(NSInteger)value;
+- (NSString *)guess:(NSInteger)value;
 @end

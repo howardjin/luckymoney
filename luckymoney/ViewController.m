@@ -8,13 +8,13 @@
 
 
 #import "ViewController.h"
-#import "Guess.h"
+#import "LuckyMoney.h"
 
 
 @interface ViewController ()
 @property(weak, nonatomic) IBOutlet UILabel *banner;
 @property(weak, nonatomic) IBOutlet UITextField *input;
-@property(nonatomic) Guess *guess;
+@property(nonatomic) LuckyMoney *luckyMoney;
 
 @end
 
@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.guess = [[Guess alloc] initWithGoal:arc4random_uniform(100)];
+    self.luckyMoney = [[LuckyMoney alloc] initWithMoney:arc4random_uniform(100)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,7 +35,7 @@
 - (IBAction)submit:(id)sender {
     self.input.text = @"";
     [self.input resignFirstResponder];
-    self.banner.text = [self.guess tryNext:[self.input.text integerValue]];
+    self.banner.text = [self.luckyMoney guess:[self.input.text integerValue]];
 }
 
 @end

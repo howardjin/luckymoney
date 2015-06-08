@@ -4,7 +4,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "Guess.h"
+#import "LuckyMoney.h"
 
 @interface GuessTests : XCTestCase
 
@@ -12,9 +12,9 @@
 @implementation GuessTests
 
 - (void)testBingo {
-    Guess *guess = [[Guess alloc] initWithGoal:1];
-    NSString *result = [guess tryNext:1];
-    XCTAssert([result isEqual:@"Bingo!"], @"should show bingo after correct guess");
+    LuckyMoney *guess = [[LuckyMoney alloc] initWithMoney:1];
+    NSString *result = [guess guess:1];
+    XCTAssert([result isEqual:@"Bingo!"], @"should show bingo after correct luckyMoney");
 }
 
 @end

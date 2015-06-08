@@ -1,20 +1,20 @@
 //
-//  Guess.m
+//  LuckyMoney.m
 //  luckymoney
 //
 //  Created by kpse on 6/8/15.
 //  Copyright (c) 2015 kpse. All rights reserved.
 //
 
-#import "Guess.h"
+#import "LuckyMoney.h"
 
-@interface Guess ()
+@interface LuckyMoney ()
 @property(nonatomic) NSInteger goal;
 @end
 
-@implementation Guess
+@implementation LuckyMoney
 
-- (instancetype)initWithGoal:(NSInteger)goal {
+- (instancetype)initWithMoney:(NSInteger)goal {
     self = [super init];
     if (self) {
         self.goal = goal;
@@ -23,8 +23,7 @@
     return self;
 }
 
-
-- (NSString *)tryNext:(NSInteger)value {
+- (NSString *)guess:(NSInteger)value {
     //TODO:
     return @"Bingo!";
 }
