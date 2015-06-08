@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		056A2A7D1B25CEC500F3BB74 /* Guess.m in Sources */ = {isa = PBXBuildFile; fileRef = 056A2A7C1B25CEC500F3BB74 /* Guess.m */; };
 		351C30B6174EA1D17C4160AB /* luckymoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C36A35AE3A6C72652CAE9 /* luckymoneyTests.m */; };
 		351C328A1B3E947F5DCC834E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 351C3F94CDF5C5890A4680E5 /* Images.xcassets */; };
 		351C3537B8696C40B3B7B6B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 351C345FB868D8B6381F52A1 /* Main.storyboard */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		056A2A7B1B25CEC500F3BB74 /* Guess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Guess.h; sourceTree = "<group>"; };
+		056A2A7C1B25CEC500F3BB74 /* Guess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Guess.m; sourceTree = "<group>"; };
 		351C3354854673512BF6F50D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		351C33870B916FAE8A955408 /* luckymoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = luckymoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		351C344C60947115A2BB4866 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				351C345FB868D8B6381F52A1 /* Main.storyboard */,
 				351C395E68DF80509219BE12 /* ViewController.h */,
 				351C3354854673512BF6F50D /* ViewController.m */,
+				056A2A7B1B25CEC500F3BB74 /* Guess.h */,
+				056A2A7C1B25CEC500F3BB74 /* Guess.m */,
 			);
 			path = luckymoney;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				351C38E5BB5995BCC7219060 /* main.m in Sources */,
+				056A2A7D1B25CEC500F3BB74 /* Guess.m in Sources */,
 				351C3FDFAEE07DDBC70328E9 /* AppDelegate.m in Sources */,
 				351C3764136CD198E8235A8F /* ViewController.m in Sources */,
 			);
@@ -392,6 +398,7 @@
 				351C3136BDE9AAEDDA4F1AB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		351C346361D1F87167511888 /* Build configuration list for PBXNativeTarget "luckymoneyTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +407,7 @@
 				351C33B4BE3D93671D526E6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		351C3CF538B200401A4C5E24 /* Build configuration list for PBXProject "luckymoney" */ = {
 			isa = XCConfigurationList;
