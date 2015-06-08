@@ -29,4 +29,11 @@
     XCTAssert([result isEqual:@"1-50"], @"should show upper range after bigger guess");
 }
 
+- (void)testShouldAccumulateGuesses {
+    LuckyMoney *luckyMoney = [[LuckyMoney alloc] initWithMoney:50];
+    [luckyMoney guess:1];
+    NSString *result = [luckyMoney guess:99];
+    XCTAssert([result isEqual:@"2-98"], @"should accumulate historical guesses");
+}
+
 @end

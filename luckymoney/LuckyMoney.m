@@ -10,6 +10,8 @@
 
 @interface LuckyMoney ()
 @property(nonatomic) NSInteger goal;
+@property(nonatomic) NSInteger min;
+@property(nonatomic) NSInteger max;
 @end
 
 @implementation LuckyMoney
@@ -18,6 +20,8 @@
     self = [super init];
     if (self) {
         self.goal = goal;
+        self.min = 1;
+        self.max = 100;
     }
 
     return self;
@@ -26,9 +30,11 @@
 - (NSString *)guess:(NSInteger)value {
     //TODO:
     if (value < self.goal) {
-        return [NSString stringWithFormat:@"%@-100", @(value + 1)];
+        self.min = value + 1;
+        return [NSString stringWithFormat:@"%@-%@", @(self.min), @(self.max)];
     } else if (value > self.goal){
-        return [NSString stringWithFormat:@"1-%@", @(value - 1)];
+        self.max = value - 1;
+        return [NSString stringWithFormat:@"%@-%@", @(self.min), @(self.max)];
     }
     return @"Bingo!";
 }
