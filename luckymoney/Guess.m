@@ -26,6 +26,6 @@
 
 - (NSString *)tryNext:(NSInteger)value {
     //TODO:
-    return @"1-100";
+    return @"Bingo!";
 }
 @end
