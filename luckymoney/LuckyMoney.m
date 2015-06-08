@@ -29,6 +29,9 @@
 
 - (NSString *)guess:(NSInteger)value {
     //TODO:
+    if (value < self.min || value > self.max) {
+        return [NSString stringWithFormat:@"%@-%@", @(self.min), @(self.max)];
+    }
     if (value < self.goal) {
         self.min = value + 1;
         return [NSString stringWithFormat:@"%@-%@", @(self.min), @(self.max)];

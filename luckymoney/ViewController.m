@@ -33,9 +33,9 @@
 }
 
 - (IBAction)submit:(id)sender {
+    self.banner.text = [self.luckyMoney guess:[self.input.text integerValue]];
     self.input.text = @"";
     [self.input resignFirstResponder];
-    self.banner.text = [self.luckyMoney guess:[self.input.text integerValue]];
 }
 
 @end

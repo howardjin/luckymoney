@@ -36,4 +36,18 @@
     XCTAssert([result isEqual:@"2-98"], @"should accumulate historical guesses");
 }
 
+- (void)testShouldNotExtendNumberRange {
+    LuckyMoney *luckyMoney = [[LuckyMoney alloc] initWithMoney:50];
+    [luckyMoney guess:40];
+    NSString *result = [luckyMoney guess:30];
+    XCTAssert([result isEqual:@"41-100"], @"should not extend lower bounds");
+}
+
+- (void)testShouldNotExtendNumberUpperRange {
+    LuckyMoney *luckyMoney = [[LuckyMoney alloc] initWithMoney:50];
+    [luckyMoney guess:60];
+    NSString *result = [luckyMoney guess:80];
+    XCTAssert([result isEqual:@"1-59"], @"should not extend higher bounds");
+}
+
 @end
