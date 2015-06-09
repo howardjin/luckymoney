@@ -10,9 +10,11 @@
 		056A2A7D1B25CEC500F3BB74 /* LuckyMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = 056A2A7C1B25CEC500F3BB74 /* LuckyMoney.m */; };
 		351C30B6174EA1D17C4160AB /* luckymoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C36A35AE3A6C72652CAE9 /* luckymoneyTests.m */; };
 		351C328A1B3E947F5DCC834E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 351C3F94CDF5C5890A4680E5 /* Images.xcassets */; };
+		351C337DCEAB95EBF1196B3B /* LuckyMentor.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C30AB720196DAF4995DFC /* LuckyMentor.m */; };
 		351C3537B8696C40B3B7B6B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 351C345FB868D8B6381F52A1 /* Main.storyboard */; };
 		351C3764136CD198E8235A8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C3354854673512BF6F50D /* ViewController.m */; };
 		351C37EB74CD3655E62478BF /* GuessTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C31E4C56FBC32157ABD70 /* GuessTest.m */; };
+		351C3823AFEA42A658B71AA2 /* LuckyMentorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C37D365D7DA4FE6C5E18B /* LuckyMentorTests.m */; };
 		351C38E5BB5995BCC7219060 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C384AEC1883D3E460EA26 /* main.m */; };
 		351C3F9F47452774AED27A1F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 351C3491F5D162E2E7F380A9 /* LaunchScreen.xib */; };
 		351C3FDFAEE07DDBC70328E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C3858B65ACA6E779A1585 /* AppDelegate.m */; };
@@ -31,12 +33,15 @@
 /* Begin PBXFileReference section */
 		056A2A7B1B25CEC500F3BB74 /* LuckyMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuckyMoney.h; sourceTree = "<group>"; };
 		056A2A7C1B25CEC500F3BB74 /* LuckyMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuckyMoney.m; sourceTree = "<group>"; };
+		351C30AB720196DAF4995DFC /* LuckyMentor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuckyMentor.m; sourceTree = "<group>"; };
 		351C31E4C56FBC32157ABD70 /* GuessTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuessTest.m; sourceTree = "<group>"; };
 		351C3354854673512BF6F50D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		351C33870B916FAE8A955408 /* luckymoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = luckymoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		351C344C60947115A2BB4866 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		351C348197508CAEE058F9D8 /* LuckyMentor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuckyMentor.h; sourceTree = "<group>"; };
 		351C36A35AE3A6C72652CAE9 /* luckymoneyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = luckymoneyTests.m; sourceTree = "<group>"; };
 		351C36BD7FE50E90EFB0CA31 /* luckymoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = luckymoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		351C37D365D7DA4FE6C5E18B /* LuckyMentorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuckyMentorTests.m; sourceTree = "<group>"; };
 		351C381B2BA19C529DC49E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		351C384AEC1883D3E460EA26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		351C3858B65ACA6E779A1585 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,6 +85,7 @@
 				351C3B73E12A3A1A0A79A3E0 /* Supporting Files */,
 				351C36A35AE3A6C72652CAE9 /* luckymoneyTests.m */,
 				351C31E4C56FBC32157ABD70 /* GuessTest.m */,
+				351C37D365D7DA4FE6C5E18B /* LuckyMentorTests.m */,
 			);
 			path = luckymoneyTests;
 			sourceTree = "<group>";
@@ -123,6 +129,8 @@
 				351C3354854673512BF6F50D /* ViewController.m */,
 				056A2A7B1B25CEC500F3BB74 /* LuckyMoney.h */,
 				056A2A7C1B25CEC500F3BB74 /* LuckyMoney.m */,
+				351C30AB720196DAF4995DFC /* LuckyMentor.m */,
+				351C348197508CAEE058F9D8 /* LuckyMentor.h */,
 			);
 			path = luckymoney;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 			files = (
 				351C30B6174EA1D17C4160AB /* luckymoneyTests.m in Sources */,
 				351C37EB74CD3655E62478BF /* GuessTest.m in Sources */,
+				351C3823AFEA42A658B71AA2 /* LuckyMentorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +238,7 @@
 				056A2A7D1B25CEC500F3BB74 /* LuckyMoney.m in Sources */,
 				351C3FDFAEE07DDBC70328E9 /* AppDelegate.m in Sources */,
 				351C3764136CD198E8235A8F /* ViewController.m in Sources */,
+				351C337DCEAB95EBF1196B3B /* LuckyMentor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

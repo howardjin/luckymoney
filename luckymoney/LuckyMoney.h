@@ -9,7 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <stdlib.h>
 
-@interface LuckyMoney : NSObject
+@protocol LuckyPicker
+- (NSString *)guess:(NSInteger)value;
+@end
+
+@interface LuckyMoney : NSObject<LuckyPicker>
 
 - (instancetype)initWithMoney:(NSInteger)goal;
 

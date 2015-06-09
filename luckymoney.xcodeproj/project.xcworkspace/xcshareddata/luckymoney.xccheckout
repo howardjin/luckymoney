@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8323994A-0FBE-4EA0-A925-3580F855D895</string>
+	<key>IDESourceControlProjectName</key>
+	<string>luckymoney</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E63C549506CCF3A815016E76CB34738F806D3F3F</key>
+		<string>github.com:kpse/luckymoney.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>luckymoney.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E63C549506CCF3A815016E76CB34738F806D3F3F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:kpse/luckymoney.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E63C549506CCF3A815016E76CB34738F806D3F3F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E63C549506CCF3A815016E76CB34738F806D3F3F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>luckymoney</string>
+		</dict>
+	</array>
+</dict>
+</plist>
