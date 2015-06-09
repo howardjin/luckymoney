@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猜红包" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vw-N4-qGZ">
-                                <rect key="frame" x="191" y="28" width="218" height="21"/>
+                                <rect key="frame" x="191" y="120" width="218" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="218" id="yMg-Dn-Idt"/>
                                 </constraints>
@@ -26,13 +26,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1-100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spw-ve-UNa">
-                                <rect key="frame" x="279" y="72" width="45" height="21"/>
+                                <rect key="frame" x="279" y="191" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TSn-BT-VDs">
-                                <rect key="frame" x="171" y="108" width="260" height="30"/>
+                                <rect key="frame" x="171" y="227" width="260" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="P30-N9-YMl"/>
                                 </constraints>
@@ -40,7 +40,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBk-6q-8TV">
-                                <rect key="frame" x="286" y="158" width="30" height="30"/>
+                                <rect key="frame" x="286" y="277" width="30" height="30"/>
                                 <state key="normal" title="提交"/>
                                 <connections>
                                     <action selector="submit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3rb-Nt-B5w"/>
@@ -51,14 +51,19 @@
                         <constraints>
                             <constraint firstItem="TSn-BT-VDs" firstAttribute="top" secondItem="spw-ve-UNa" secondAttribute="bottom" constant="15" id="0Sa-B3-WFF"/>
                             <constraint firstItem="VBk-6q-8TV" firstAttribute="top" secondItem="TSn-BT-VDs" secondAttribute="bottom" constant="20" id="9yH-U1-aff"/>
-                            <constraint firstItem="spw-ve-UNa" firstAttribute="top" secondItem="2Vw-N4-qGZ" secondAttribute="bottom" constant="23" id="CJ0-0J-j4P"/>
-                            <constraint firstItem="2Vw-N4-qGZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="E5X-yq-31r"/>
+                            <constraint firstItem="spw-ve-UNa" firstAttribute="top" secondItem="2Vw-N4-qGZ" secondAttribute="bottom" constant="50" id="CJ0-0J-j4P"/>
+                            <constraint firstItem="2Vw-N4-qGZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="E5X-yq-31r"/>
                             <constraint firstItem="spw-ve-UNa" firstAttribute="top" secondItem="2Vw-N4-qGZ" secondAttribute="bottom" constant="23" id="Mee-Ov-3wF"/>
                             <constraint firstItem="2Vw-N4-qGZ" firstAttribute="centerX" secondItem="spw-ve-UNa" secondAttribute="centerX" constant="-1.5" id="Ncv-XS-EbX"/>
                             <constraint firstItem="spw-ve-UNa" firstAttribute="centerX" secondItem="TSn-BT-VDs" secondAttribute="centerX" constant="1" id="qP0-Kc-mBe"/>
                             <constraint firstItem="VBk-6q-8TV" firstAttribute="centerX" secondItem="TSn-BT-VDs" secondAttribute="centerX" constant="0.5" id="qWv-s9-0rH"/>
                             <constraint firstAttribute="centerX" secondItem="2Vw-N4-qGZ" secondAttribute="centerX" id="r5E-eu-M4j"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Mee-Ov-3wF"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="banner" destination="spw-ve-UNa" id="C0E-r0-MP1"/>
