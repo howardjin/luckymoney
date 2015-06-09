@@ -14,4 +14,6 @@
 - (instancetype)initWithMoney:(NSInteger)goal;
 
 - (NSString *)guess:(NSInteger)value;
+
+- (id)initWithLuckNumbers;
 @end

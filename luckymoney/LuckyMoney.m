@@ -41,4 +41,10 @@
     }
     return @"Bingo!";
 }
+
+- (id)initWithLuckNumbers {
+    NSArray *goals = @[@66, @88];
+    NSInteger choice = [goals[arc4random_uniform(2)] integerValue];
+    return [self initWithMoney:choice];
+}
 @end

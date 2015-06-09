@@ -50,4 +50,12 @@
     XCTAssert([result isEqual:@"1-59"], @"should not extend higher bounds");
 }
 
+- (void)testShouldBeAbleToInitWithLuckyNumbers {
+    LuckyMoney *luckyMoney = [[LuckyMoney alloc] initWithLuckNumbers];
+    NSString *result1 = [luckyMoney guess:66];
+    NSString *result2 = [luckyMoney guess:88];
+    NSArray *array = @[result1, result2];
+    XCTAssert([array containsObject:@"Bingo!"], @"should init with lucky numbers");
+}
+
 @end

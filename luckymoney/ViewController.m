@@ -24,7 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.luckyMoney = [[LuckyMoney alloc] initWithMoney:arc4random_uniform(100)];
+//    self.luckyMoney = [[LuckyMoney alloc] initWithMoney:arc4random_uniform(100)];
+    self.luckyMoney = [[LuckyMoney alloc] initWithLuckNumbers];
 }
 
 - (void)didReceiveMemoryWarning {
